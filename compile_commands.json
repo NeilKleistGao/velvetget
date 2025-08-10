@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/home/neilkleistgao/velvetget/bin",
+    "command": "c++ -Ivelvetget.p -I. -I.. -I../cxxopts/include -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O0 -g -MD -MQ velvetget.p/main.cpp.o -MF velvetget.p/main.cpp.o.d -o velvetget.p/main.cpp.o -c ../main.cpp",
+    "file": "../main.cpp",
+    "output": "velvetget.p/main.cpp.o"
+  }
+]
