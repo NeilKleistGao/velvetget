@@ -4,5 +4,13 @@ project('velvetget', 'cpp', default_options: [
 
 cxxopt_include = include_directories('cxxopts/include')
 
-executable('velvetget', 'main.cpp', include_directories: cxxopt_include)
+libspng_sp = subproject('libspng')
+libspng_dep = libspng_sp.get_variable('spng_dep')
+spng_include = include_directories('subprojects/libspng/spng')
+
+velvetget_src = files('main.cpp', 'image.cpp', 'showie.cpp')
+
+executable('velvetget', velvetget_src,
+  include_directories: [cxxopt_include, spng_include],
+  dependencies: [libspng_dep])
 

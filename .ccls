@@ -1,2 +1,4 @@
--I/cxxopts/include
+-Icxxopts/include
+-Isubprojects/libspng/spng
 -std=c++17
+

@@ -42,4 +42,6 @@
 
 bin/
 .ccls-cache/
+subprojects/libspng/
+compile_commands.json
 
